@@ -31,6 +31,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run:  curl -u xDBKUopxoRAAVPsL: "https://assertible.com/deployments" -d'{
+              "service": "8f8d8ad9-8c06-4da7-ba50-a5e44293d5fa",
+              "environment": "production",
+              "version": "v1",
+              "ref": "'"$(git rev-parse HEAD)"'",
+              "github": true
+          }'
