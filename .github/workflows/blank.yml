@@ -34,7 +34,7 @@ jobs:
         run: |
           curl -u xDBKUopxoRAAVPsL: "https://assertible.com/deployments" -d'{
           "service": "8f8d8ad9-8c06-4da7-ba50-a5e44293d5fa",
-          "environment": "production",
+          "environment": "CI",
           "version": "v1",
           "ref": "'"$(git rev-parse HEAD)"'",
           "github": true}'
